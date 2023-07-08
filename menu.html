@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>MENU</title>
+  <style>
+    .header {
+      height: auto;
+      background-color: lightpink;
+    }
+
+    .name {
+      height: 50px;
+      text-decoration: bold;
+    }
+
+    .icon {
+      display: inline;
+      float: right;
+      height: 50px;
+      font-size: 20px;
+      text-align: end;
+      margin-top: 25px;
+      width: 20%;
+    }
+
+    .fa {
+      color: white;
+      background-color: #F87353;
+      padding: 5px 5px;
+      border-radius: 3px;
+    }
+
+    .menu {
+      height: auto;
+      background-color: #fbf1ee;
+    }
+
+    .logo {
+      display: inline;
+      width: 15%;
+    }
+
+    .logo a {
+      display: inline;
+    }
+
+    .logo img {
+      height: 100px;
+      width: 100px;
+      display: inline;
+      border-radius: 10px;
+    }
+
+    nav {
+      padding: 10px 0px 10px 0px;
+      border-bottom: 2px solid #f07a6244;
+    }
+
+    .nav-links {
+      display: inline;
+      width: 85%;
+    }
+
+    nav ul li a:hover {
+      box-shadow: 0px 0px 20px #F87353;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    .mbutton {
+      float: left;
+      display: inline;
+      width: 80%;
+    }
+
+
+    .mbutton ul li a {
+      color: #F87353;
+      line-height: 80px;
+      font-size: 30px;
+      margin: 0px 5px 0px 5px;
+      background-color: #f07a6244;
+      padding: 3px 5px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+
+    .mbutton ul li a:hover {
+      background-color: white;
+      box-shadow: 0px 0px 20px #F87353;
+    }
+
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    #tabil {
+      position: fixed;
+    }
+
+    .t {
+      height: 500px;
+      width: 500%;
+      background-color: white;
+      display: block;
+      border-radius: 10px;
+
+    }
+
+    .table {
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+
+    table thead tr th {
+      color: black;
+      background: linear-gradient(135deg, pink,white);
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    table tbody tr td {
+      color: darkgreen;
+    }
+
+    h1 {
+      color: black;
+      background-color: lightblue;
+      font-style: oblique;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="row menu">
+      <div class="logo">
+        <a href="cafe.html"><img src="pic/img1.webp"></a>
+      </div>
+      <div class="nav-links">
+        <div class="mbutton">
+          <ul>
+            <li>
+              <a href="cafe.html">Home</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="location.html">Location</a>
+            </li>
+            <li>
+              <a href="popular_items.html">Popular Items</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icon">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+              <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+              <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+              <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="swiper mySwiper" id="tabil">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">VEG</th>
+              <th scope="col">CHICKEN</th>
+              <th scope="col">PANNER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>BURGER</td>
+              <td>99/-</td>
+              <td>129/-</td>
+              <td>149/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>PIZZA</td>
+              <td>99/-</td>
+              <td>111/-</td>
+              <td>129/-</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>PASTA</td>
+              <td>129/-</td>
+              <td>133/-</td>
+              <td>149/-</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">VEG</th>
+              <th scope="col">CHICKEN</th>
+              <th scope="col">PANNER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">4</th>
+              <td>TACOS</td>
+              <td>99/-</td>
+              <td>129/-</td>
+              <td>149/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>NUGGETS</td>
+              <td>99/-</td>
+              <td>111/-</td>
+              <td>129/-</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>OMLETTE</td>
+              <td>59/-</td>
+              <td>103/-</td>
+              <td>119/-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">VEG</th>
+              <th scope="col">CHICKEN</th>
+              <th scope="col">PANNER</th>
+              <th scope="col">MIX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">7</th>
+              <td>NOODLES</td>
+              <td>119/-</td>
+              <td>139/-</td>
+              <td>149/-</td>
+              <td>189/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>RICE</td>
+              <td>129/-</td>
+              <td>151/-</td>
+              <td>169/-</td>
+              <td>199/-</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>THALI</td>
+              <td>189/-</td>
+              <td>223/-</td>
+              <td>256/-</td>
+              <td>299/-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">BONELESS</th>
+              <th scope="col">WITH BONE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">10</th>
+              <td>GARLIC CHICKEN</td>
+              <td>299/-</td>
+              <td>229/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>SHEZWAN CHICKEN</td>
+              <td>299/-</td>
+              <td>261/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>CHILI CHICKEN</td>
+              <td>249/-</td>
+              <td>253/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">BONELESS</th>
+              <th scope="col">WITH BONE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">13</th>
+              <td>HOT AND HONEY FISH</td>
+              <td>299/-</td>
+              <td>259/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>LEMON FISH</td>
+              <td>295/-</td>
+              <td>251/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>CHILI FISH</td>
+              <td>279/-</td>
+              <td>263/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">CREAM</th>
+              <th scope="col">WITHOUT CREAM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">16</th>
+              <td>MALAI PANNER</td>
+              <td>299/-</td>
+              <td>289/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>PANNER TIKKA MASALA</td>
+              <td>295/-</td>
+              <td>271/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>CHILI PANEER</td>
+              <td>279/-</td>
+              <td>263/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">ICE</th>
+              <th scope="col">WITHOUT ICE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">19</th>
+              <td>TEA</td>
+              <td>19/-</td>
+              <td>29/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>COFFEE</td>
+              <td>55/-</td>
+              <td>71/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>OREO SHAKE</td>
+              <td>119/-</td>
+              <td>121/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">ICE</th>
+              <th scope="col">WITHOUT ICE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">22</th>
+              <td>KITKAT SHAKE</td>
+              <td>119/-</td>
+              <td>129/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td>VIRGIN MOJITO</td>
+              <td>95/-</td>
+              <td>111/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>BLUE LAGOON</td>
+              <td>119/-</td>
+              <td>121/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table class="table">
+
+
+          <thead>
+            <tr>
+              <th scope="col">SL NO</th>
+              <th scope="col">ITEMS</th>
+              <th scope="col">ICE</th>
+              <th scope="col">WITHOUT ICE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">25</th>
+              <td>WATERMELON SMOOTHIE</td>
+              <td>129/-</td>
+              <td>139/-</td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td>STAWBERRY SMOOTHIE</td>
+              <td>125/-</td>
+              <td>131/-</td>
+
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td>HAPPY TUMMY SPECIAL</td>
+              <td>139/-</td>
+              <td>145/-</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
